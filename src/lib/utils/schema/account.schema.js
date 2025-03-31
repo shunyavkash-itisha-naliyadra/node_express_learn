@@ -2,7 +2,7 @@ import Joi from 'joi';
 export const userSchema = Joi.object({
   firstName: Joi.string().required(),
   lastName: Joi.string().required(),
-  userName: Joi.string().alphanum().min(3).max(30).required(),
+  userName: Joi.string().min(3).max(30).required(),
   email: Joi.string().email().required(),
   address: {
     addressLine: Joi.string().max(50).required(),
