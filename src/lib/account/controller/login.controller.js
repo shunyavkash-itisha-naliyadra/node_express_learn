@@ -32,6 +32,3 @@ export const loginAccount = async (req, res) => {
     return SendResponse(res, 500, false, 'User login Error!');
   }
 };
-export const getAccount = async (req, res) => {
-  console.log('he;lo');
-};
